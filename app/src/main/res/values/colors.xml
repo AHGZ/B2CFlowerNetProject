@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff0000</color>
+    <color name="colorPrimaryDark">#ff0000</color>
+    <color name="colorAccent">#11b445</color>
+    <color name="colorstart">#0ac446</color>
+    <color name="colorend">#009a44</color>
+    <color name="mineState">#11B445</color>
+    <color name="white">#ffffff</color>
+    <color name="red">#ff0000</color>
+    <color name="redO2o">#ff1e00</color>
+    <color name="selector_grey">#F8F8F8</color>
+    <color name="drop_down_selected">#7B1FA2</color>
+    <color name="drop_down_unselected">#111111</color>
+    <color name="colFFF2EF">#FFF2EF</color>
+    <color name="colF4F4F4">#F4F4F4</color>
+    <color name="col666666">#666666</color>
+    <color name="mask_color">#88888888</color>
+    <color name="stand_bg">#fff6f6f6</color>
+    <color name="divide">#ffe4e4e4</color>
+    <color name="uncompleted_color">#A3E0D9</color>
+    <color name="dividerColor">#BDBDBD</color>
+    <color name="c5">#B3B3B3</color>
+    <color name="c6">#646464</color>
+    <color name="BottomBarItemTextColor">#007039</color>
+
+
+    <color name="tab_gb">#F3F5F4</color>
+    <color name="tab_normal_color">#515051</color>
+    <color name="tab_selected_color">#D33D3C</color>
+    <color name="colorBarText">#F0F5E5</color>
+    <color name="tans">#00000000</color>
+    <color name="orange">#EE6413</color>
+    <color name="black">#ff000000</color>
+    <!--商品属性 浅色-->
+    <color name="mSwipeLayout">#cccccc</color>
+    <color name="txt_color_tint">#111</color>
+    <color name="view_color_tint">#f8f8f8</color>
+    <color name="background_color">#f7f7f7</color>
+    <color name="class_background">#3aaaaaaa</color>
+
+    <color name="list_item_focus">#0a000000</color>
+    <color name="white_alpha_percent_45">#73ffffff</color>
+    <color name="text_gray">#7b403b37</color>
+    <color name="base_red">#fffb6655</color>
+    <color name="default_line_color">#e6e6e6</color>
+    <color name="partTranslucent">#39000000</color>
+    <color name="app_bg">#f6f6f6</color>
+    <color name="titlebar">#019f44</color>
+    <color name="gary">#ececec</color>
+    <color name="trade_gray">#eaeaea</color>
+    <color name="transparent">#00000000</color>
+    <color name="link_color">#4ba9f7</color>
+    <color name="trade_item">#4B4B4B</color>
+    <color name="money_color">#FF2E00</color>
+
+    <!-- QRCode scanner color begin -->
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="result_view">#B0000000</color>
+    <color name="viewfinder_frame">#90FFFFFF</color>
+    <color name="result_point_color">#C0FFFF00</color>
+    <color name="laser_color">#0F0</color>
+    <color name="corner_color">#00FF00</color>
+    <color name="pay_pressed">#FF2E00</color>
+    <color name="pay_pressed_noraml">#e8e8e8</color>
+    <color name="all_red">#FF2E00</color>
+    <color name="all_gray">#e8e8e8</color>
+    <color name="base_text_color">#4b4b4b</color>
+    <!-- QRCode scanner color end -->
+    <!--loading view color start-->
+    <color name="triangle">#aa72d572</color>
+    <color name="circle">#aa738ffe</color>
+    <color name="rect">#aae84e40</color>
+    <color name="view_bg">#00000000</color>
+    <color name="shadow">#25808080</color>
+    <color name="dialog_bg">#f5f5f5</color>
+    <color name="apply_for_refund_noraml">#9E9E9E</color>
+    <color name="apply_for_refund_checked">#FF2E00</color>
+    <color name="mgrey">#E3E3E3</color>
+    <color name="uncompleted_text_color">#FF2E00</color>
+    <color name="mgary">#E3E3E3</color>
+    <color name="text_complter">#9F9F9F</color>
+    <color name="coloro2o">#FF1E00</color>
+    <color name="divider_gray">#fafafa</color>
+    <color name="type_gray">#f8f8f8</color>
+    <color name="type_normal">#6b6b6b</color>
+    <color name="o2o_red">#FF1E00</color>
+    <color name="o2o_gray">#333538</color>
+    <!--loading view color end-->
+
+    <color name="goods_category_bg">#F7F7F7</color>
+    <color name="goods_category_dirver">#FF8A17</color>
+    <color name="tabIndicatorColor">#FF1E00</color>
+    <color name="tabSelectedTextColor">#FF1E00</color>
+
+    <color name="forum_titleBar_bg">#05C78E</color>
+    <color name="forum_bg">#EEEEEE</color>
+    <color name="forum_font_def_color">#444444</color>
+    <color name="color_EFEFEF">#EFEFEF</color>
+    <color name="color_A2A2A2">#A2A2A2</color>
+    <color name="color_777777">#777777</color>
+    <color name="tmcolor">#00000000</color>
+
+    <color name="rebateData_tabar_gbColor">#1B1B1B</color>
+    <color name="rebateData_memberColor">#68D2AB</color>
+    <color name="rebateData_agentColor">#F75C57</color>
+    <color name="rebateData_partnerColor">#9C96FF</color>
+    <color name="rebateData_cloudColor">#48B8FA</color>
+    <color name="rebateData_businessColor">#F4CC4F</color>
+    <color name="rebateData_supplierColor">#FF934A</color>
+
+    <color name="awardData_bgColor">#FCD94C</color>
+</resources>
+

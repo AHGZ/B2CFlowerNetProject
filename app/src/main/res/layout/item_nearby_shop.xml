@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+
+    <LinearLayout
+        android:id="@+id/ll_item"
+        android:layout_width="match_parent"
+        android:layout_height="97dp"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/iv_img"
+            android:layout_width="90dp"
+            android:layout_height="97dp"
+            android:src="@mipmap/logo" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_nick"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="1"
+                    android:enabled="true"
+                    android:lines="1"
+                    android:text="永和豆浆（常营店）"
+                    android:textColor="#444444"
+                    android:textSize="16sp" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="0.5">
+
+                    <ImageView
+                        android:id="@+id/iv_by_ticket"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/ticket" />
+
+                    <TextView
+                        android:id="@+id/tv_by_self"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/shap1"
+                        android:padding="2dp"
+                        android:text="支持自取"
+                        android:textColor="#FF4614"
+                        android:textSize="10sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+
+                    <com.android.p2pflowernet.project.view.customview.RatingBarView
+                        android:id="@+id/ratin_star"
+                        android:layout_width="0dp"
+                        android:layout_height="12dp"
+                        android:layout_centerVertical="true"
+                        android:layout_weight="1"
+                        app:paddingleft="5"
+                        app:paddingright="5"
+                        app:starCount="5"
+                        app:starEmpty="@drawable/star_border1_hide"
+                        app:starFill="@drawable/star_border1_show"
+                        app:starImageSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/yu_sale"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/ratin_star"
+                        android:layout_weight="1"
+                        android:gravity="center|center_vertical"
+                        android:text="月售2111"
+                        android:textSize="11sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:gravity="right|center_vertical">
+
+                    <TextView
+                        android:id="@+id/tv_minue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="40分钟 "
+                        android:textColor="#777777"
+                        android:textSize="11sp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="8dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="3dp"
+                        android:background="#4b4b4b" />
+
+                    <TextView
+                        android:id="@+id/tv_distance"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|right"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:text="6.6km"
+                        android:textColor="#777777"
+                        android:textSize="11sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/qis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="起送 ￥15 "
+                    android:textColor="#777777"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/peis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="配送￥9 "
+                    android:textColor="#777777"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/rj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical|right"
+                    android:text="人均 ￥16 "
+                    android:textColor="#777777"
+                    android:textSize="11sp"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv_manf"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/full" />
+
+                <TextView
+                    android:id="@+id/tv_manf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/iv_manf"
+                    android:text="满30花返19，满50花返25，满70花返22"
+                    android:textColor="#A2A2A2"
+                    android:textSize="11sp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv_height"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/return_ticket" />
+
+                <TextView
+                    android:id="@+id/tv_height"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/iv_height"
+                    android:text="最高花返:￥22"
+                    android:textColor="#A2A2A2"
+                    android:textSize="11sp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/forum_bg">
+
+    <RelativeLayout
+        android:id="@+id/fragment_groupBuying_toEvaluate_rl"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="#FF1E00">
+
+        <ImageView
+            android:id="@+id/fragment_groupBuying_toEvaluate_img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:scaleType="center"
+            android:src="@mipmap/icon_back_white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="评价"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/fragment_groupBuying_toEvaluate_rl"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="15dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="121dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/fragment_groupBuying_toEvaluate_rl"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/fragment_groupBuying_toEvaluate_img"
+                        android:layout_width="91dp"
+                        android:layout_height="91dp"
+                        android:layout_gravity="center_vertical"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/default_image" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:paddingTop="16dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentBottom="true"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/fragment_groupBuying_toEvaluate_tv_title"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="汪家特色麻婆豆腐"
+                                    android:textColor="@color/forum_font_def_color"
+                                    android:textSize="15sp" />
+
+                                <LinearLayout
+                                    android:layout_marginTop="4dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/fragment_groupBuying_toEvaluate_tv_price"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="￥25"
+                                        android:textColor="#FF1E00"
+                                        android:textSize="15sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="花返:"
+                                        android:textColor="@color/mask_color"
+                                        android:textSize="11sp" />
+
+                                    <TextView
+                                        android:id="@+id/fragment_groupBuying_toEvaluate_tv_huafanPrice"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:text="￥9"
+                                        android:textColor="@color/mask_color"
+                                        android:textSize="11sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/fragment_groupBuying_toEvaluate_tv_number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentRight="true"
+                                android:text="2"
+                                android:textColor="#A2A2A2"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginLeft="4dp"
+                                android:layout_toLeftOf="@id/fragment_groupBuying_toEvaluate_tv_number"
+                                android:text="x"
+                                android:textColor="#A2A2A2"
+                                android:textSize="15sp" />
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="有效期:"
+                                android:textColor="@color/forum_font_def_color"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/fragment_groupBuying_toEvaluate_tv_vld"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="2017/12/12-2017/12/12"
+                                android:textColor="@color/forum_font_def_color"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/forum_bg" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="评价"
+                        android:textColor="@color/forum_font_def_color"
+                        android:textSize="14sp" />
+
+                    <com.android.p2pflowernet.project.view.customview.RatingBarView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/fragment_groupBuying_toEvaluate_ratingBarView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:gravity="center_horizontal"
+                        app:starCount="5"
+                        app:starEmpty="@drawable/star_border_hide"
+                        app:starFill="@drawable/star_border_show"
+                        app:starImageSize="28dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/signature_shape"
+                    android:orientation="vertical">
+
+                    <com.android.p2pflowernet.project.view.customview.CustomEditText
+                        android:id="@+id/fragment_groupBuying_toEvaluate_editText"
+                        android:layout_width="match_parent"
+                        android:layout_height="86dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@null"
+                        android:gravity="top"
+                        android:hint="说说它的优点和美中不足的地方呗"
+                        android:maxLength="30"
+                        android:padding="@dimen/dp_10"
+                        android:textColor="#9F9F9F"
+                        android:textColorHint="#9F9F9F"
+                        android:textSize="@dimen/sp_14" />
+
+                    <TextView
+                        android:id="@+id/fragment_groupBuying_toEvaluate_tv_place"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="right|center_vertical"
+                        android:text="1/30字"
+                        android:textSize="10dp" />
+                </LinearLayout>
+
+                <com.android.p2pflowernet.project.view.customview.MyGridView
+                    android:id="@+id/fragment_groupBuying_toEvaluate_gridView"
+                    android:layout_width="match_parent"
+                    android:layout_height="163dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="20dp"
+                    android:horizontalSpacing="3dp"
+                    android:stretchMode="columnWidth"
+                    android:gravity="center"
+                    android:numColumns="3"
+                    android:scrollbars="none"
+                    android:verticalSpacing="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp">
+
+                <CheckBox
+                    style="@style/CustomCheckBoxTheme"
+                    android:id="@+id/fragment_groupBuying_toEvaluate_checkBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="匿名"
+                    android:textColor="#444444"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="(你写的评价会以匿名的形式展现)"
+                    android:textColor="#A2A2A2"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/fragment_groupBuying_toEvaluate_tv_release"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/takeout_toevaluate_release_selector"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="发布"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

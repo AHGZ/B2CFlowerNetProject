@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_trace_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <View
+            android:id="@+id/v_up_line"
+            android:layout_width="1dp"
+            android:layout_height="10dp"
+            android:layout_marginLeft="7dp"
+            android:background="@color/mgrey" />
+
+        <ImageView
+            android:id="@+id/iv_state"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/icon_passed" />
+
+        <TextView
+            android:id="@+id/tv_trace_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:autoLink="phone"
+            android:layout_toRightOf="@id/iv_state"
+            android:text="@string/test_trace_info"
+            android:textColor="#9F9F9F"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_trace_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_trace_info"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/iv_state"
+            android:text="@string/test_trace_info"
+            android:textColor="#9F9F9F"
+            android:textSize="12sp" />
+
+
+        <View
+            android:id="@+id/v_down_line"
+            android:layout_width="1dp"
+            android:layout_height="45dp"
+            android:layout_below="@id/iv_state"
+            android:layout_marginLeft="7dp"
+            android:background="@color/mgrey" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="15dp"
+        android:background="#e8e8e8" />
+
+</RelativeLayout>

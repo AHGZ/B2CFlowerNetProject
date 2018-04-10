@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="1dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:paddingBottom="15dp"
+        android:paddingTop="20dp">
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:text="盛宴一品小羊排"
+            android:textColor="#444444"
+            android:textSize="14sp" />
+
+        <com.android.p2pflowernet.project.view.customview.RatingBarView
+            android:id="@+id/ratin_star1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dp"
+            app:paddingleft="5"
+            app:paddingright="5"
+            app:starCount="5"
+            app:starEmpty="@drawable/star_border1_hide"
+            app:starFill="@drawable/star_border1_show"
+            app:starImageSize="18dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:background="#FFFFFF">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/sle_item_selector">
+
+            <com.android.p2pflowernet.project.view.customview.CustomEditText
+                android:id="@+id/shop_evaluation_item_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="说说它的优点和美中不足的地方呗"
+                android:paddingLeft="16dp"
+                android:maxLength="30"
+                android:paddingTop="10dp"
+                android:textColor="#A2A2A2"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/shop_evaluation_item_tv_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="9dp"
+                android:layout_marginRight="9dp"
+                android:text="1/30字"
+                android:textColor="#A2A2A2"
+                android:textSize="10sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:text="盛宴一品小羊排..."
+            android:textColor="#444444"
+            android:textSize="14sp" />
+
+        <com.android.p2pflowernet.project.view.customview.RatingBarView
+            android:id="@+id/ratin_star2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dp"
+            app:paddingleft="5"
+            app:paddingright="5"
+            app:starCount="5"
+            app:starEmpty="@drawable/star_border1_hide"
+            app:starFill="@drawable/star_border1_show"
+            app:starImageSize="18dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:text="鸡胗"
+            android:textColor="#444444"
+            android:textSize="14sp" />
+
+        <com.android.p2pflowernet.project.view.customview.RatingBarView
+            android:id="@+id/ratin_star3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dp"
+            app:paddingleft="5"
+            app:paddingright="5"
+            app:starCount="5"
+            app:starEmpty="@drawable/star_border1_hide"
+            app:starFill="@drawable/star_border1_show"
+            app:starImageSize="18dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="匿名"
+            android:textColor="#444444"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:text="（你写的评价会以匿名的形式展现）"
+            android:textColor="#A2A2A2"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/shop_evaluation_item_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="34dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:background="#FF1E00"
+        android:text="发布"
+        android:textColor="#FFFEFE"
+        android:textSize="18sp" />
+</LinearLayout>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:gravity="center"
+        android:text="购买须知"
+        android:textColor="#444444"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EFEFEF" />
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="15dp"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:text="有效期"-->
+        <!--android:textColor="#444444"-->
+        <!--android:textSize="14sp" />-->
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="15dp"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:text="2015.3.20至2017.12.3"-->
+        <!--android:textColor="#777777"-->
+        <!--android:textSize="13sp" />-->
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="15dp"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:text="不可用日期"-->
+        <!--android:textColor="#444444"-->
+        <!--android:textSize="14sp" />-->
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="15dp"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:text="周六至周日、节假日"-->
+        <!--android:textColor="#777777"-->
+        <!--android:textSize="13sp" />-->
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="15dp"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:text="使用规则"-->
+        <!--android:textColor="#444444"-->
+        <!--android:textSize="14sp" />-->
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="15dp"-->
+        <!--android:layout_marginRight="16dp"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:text="1. 无需预约（消费高峰时可能需要等位）"-->
+        <!--android:textColor="#777777"-->
+        <!--android:textSize="12sp" />-->
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="15dp"-->
+        <!--android:layout_marginRight="16dp"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:lineSpacingExtra="9dp"-->
+        <!--android:text="2. 每张花返券最多1位成人使用，身高1米以上儿童计入人数1米以 下儿童享受本套餐不另收费，须大人陪同"-->
+        <!--android:textColor="#777777"-->
+        <!--android:textSize="12sp" />-->
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="15dp"-->
+        <!--android:layout_marginRight="16dp"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:text="3. 持团购券消费不享受比格会员积分"-->
+        <!--android:textColor="#777777"-->
+        <!--android:textSize="12sp" />-->
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="15dp"-->
+        <!--android:layout_marginRight="16dp"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:text="4. 不兑现金，不设找赎，限堂食，不可与其他优惠同享"-->
+        <!--android:textColor="#777777"-->
+        <!--android:textSize="12sp" />-->
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="15dp"-->
+        <!--android:layout_marginRight="16dp"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:text="5. 老人、小孩有更多优惠，详询请咨询各分店"-->
+        <!--android:textColor="#777777"-->
+        <!--android:textSize="12sp" />-->
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="15dp"-->
+        <!--android:layout_marginRight="16dp"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:text="6. 团购用户不可同时享受商家其他优惠"-->
+        <!--android:textColor="#777777"-->
+        <!--android:textSize="12sp" />-->
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="15dp"-->
+        <!--android:layout_marginRight="16dp"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:text="7. 部分菜品因时令原因有所不同，请以店内当日实际供应为准"-->
+        <!--android:textColor="#777777"-->
+        <!--android:textSize="12sp" />-->
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="15dp"-->
+        <!--android:layout_marginRight="16dp"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:text="8. 提供免费WiFi"-->
+        <!--android:textColor="#777777"-->
+        <!--android:textSize="12sp" />-->
+
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:layout_marginTop="15dp"-->
+        <!--android:background="#EFEFEF" />-->
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginBottom="16dp"-->
+        <!--android:layout_marginLeft="15dp"-->
+        <!--android:layout_marginTop="16dp"-->
+        <!--android:text="停车位收费标准：详情请咨询商家"-->
+        <!--android:textColor="#444444"-->
+        <!--android:textSize="14sp" />-->
+
+    <com.android.p2pflowernet.project.view.customview.MyListView
+        android:id="@+id/group_buying_goshoppping_know_listview"
+        android:layout_width="match_parent"
+        android:dividerHeight="0dp"
+        android:divider="#FFFFFF"
+        android:layout_height="wrap_content">
+
+    </com.android.p2pflowernet.project.view.customview.MyListView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#EEEEEE"/>
+
+</LinearLayout>

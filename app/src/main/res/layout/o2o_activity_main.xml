@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.android.p2pflowernet.project.view.customview.NoScrollViewPager
+        android:id="@+id/vp_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+
+    <com.android.p2pflowernet.project.view.bottombar.BottomBarLayout
+        android:id="@+id/bbl"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:orientation="horizontal">
+
+        <com.android.p2pflowernet.project.view.bottombar.BottomBarItem
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:iconNormal="@drawable/icon_sy"
+            app:iconSelected="@drawable/icon_syxz"
+            app:itemText="首页"
+            app:itemTextSize="12sp"
+            app:openTouchBg="true"
+            app:textColorNormal="@color/tab_normal_color"
+            app:textColorSelected="@color/redO2o"
+            app:touchDrawable="@drawable/selector_bg" />
+
+
+        <com.android.p2pflowernet.project.view.bottombar.BottomBarItem
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:iconNormal="@drawable/icon_sc"
+            app:iconSelected="@drawable/icon_scxz"
+            app:itemText="商城"
+            app:itemTextSize="12sp"
+            app:openTouchBg="true"
+            app:textColorNormal="@color/tab_normal_color"
+            app:textColorSelected="@color/redO2o"
+            app:touchDrawable="@drawable/selector_bg" />
+
+        <com.android.p2pflowernet.project.view.bottombar.BottomBarItem
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:iconNormal="@drawable/icon_wd"
+            app:iconSelected="@drawable/icon_wdxz"
+            app:itemText="我的"
+            app:itemTextSize="12sp"
+            app:openTouchBg="true"
+            app:textColorNormal="@color/tab_normal_color"
+            app:textColorSelected="@color/redO2o"
+            app:touchDrawable="@drawable/selector_bg" />
+
+    </com.android.p2pflowernet.project.view.bottombar.BottomBarLayout>
+
+</LinearLayout>

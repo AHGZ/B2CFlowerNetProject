@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="15dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+
+        <ImageView
+            android:id="@+id/iv_user"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_image" />
+
+
+        <TextView
+            android:id="@+id/tv_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/iv_user"
+            android:text="T3 彭***1"
+            android:textColor="#98999A"
+            android:textSize="12sp" />
+
+
+        <com.android.p2pflowernet.project.view.customview.RatingBarView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/ms_ratingbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tt1"
+            android:gravity="center"
+            android:visibility="visible"
+            app:starCount="5"
+            app:starEmpty="@drawable/star_border_hide"
+            app:starFill="@drawable/star_border_show"
+            app:starImageSize="15dp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_cs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:lines="1"
+        android:text="颜色分类:天蓝色"
+        android:textColor="#737373"
+        android:textSize="13sp" />
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:text="宝贝收到了,质量非常好,值得购买."
+        android:textColor="#4B4B4B"
+        android:textSize="13sp" />
+
+    <HorizontalScrollView
+        android:id="@+id/hs_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:scrollbars="none">
+
+
+        <LinearLayout
+            android:id="@+id/ll_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/tv_reply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:text="商家回复"
+        android:paddingLeft="10dp"
+        android:background="@drawable/zghf_bg"
+        android:textColor="#A0A0A1"
+        android:textSize="13sp"
+        android:visibility="gone"/>
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <com.android.p2pflowernet.project.view.customview.NoScrollGridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:horizontalSpacing="30dp"
+        android:numColumns="4"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="12dp"
+        android:paddingTop="12dp"
+        android:verticalSpacing="13dp" />
+
+    <View
+        android:id="@+id/view_gray"
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:background="#eeeeee" />
+
+
+</LinearLayout>

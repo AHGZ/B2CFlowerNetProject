@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="10dp"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/image2" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="达达配送"
+            android:layout_marginLeft="10dp"
+            android:textColor="#444444"
+            android:textSize="15sp"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:text="12月14日11:45左右送达"
+            android:textColor="#444444"
+            android:textSize="13sp"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+    <com.android.p2pflowernet.project.view.customview.RatingBarView
+        android:id="@+id/ratin_star2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        app:paddingleft="5"
+        app:paddingright="5"
+        app:starCount="5"
+        app:starEmpty="@drawable/star_border1_hide"
+        app:starFill="@drawable/star_border1_show"
+        app:starImageSize="30dp" />
+
+</LinearLayout>

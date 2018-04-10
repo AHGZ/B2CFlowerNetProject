@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/image3" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="榴芒甜品"
+            android:textColor="#444444"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <com.android.p2pflowernet.project.view.customview.RatingBarView
+        android:id="@+id/ratin_star2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        app:paddingleft="5"
+        app:paddingright="5"
+        app:starCount="5"
+        app:starEmpty="@drawable/star_border1_hide"
+        app:starFill="@drawable/star_border1_show"
+        app:starImageSize="30dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/sle_item_selector">
+
+        <com.android.p2pflowernet.project.view.customview.CustomEditText
+            android:id="@+id/shop_evaluation_item_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="说说它的优点和美中不足的地方呗"
+            android:maxLength="30"
+            android:paddingLeft="16dp"
+            android:paddingTop="10dp"
+            android:textColor="#A2A2A2"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/shop_evaluation_item_tv_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="9dp"
+            android:layout_marginRight="9dp"
+            android:maxLength="30"
+            android:text="1/30字"
+            android:textColor="#A2A2A2"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+
+        <ImageView
+            android:id="@+id/shop_evaluation_addimg"
+            android:layout_width="84dp"
+            android:layout_height="84dp"
+            android:layout_margin="15dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/shape_unread" />
+
+
+        <com.android.p2pflowernet.project.view.customview.MyGridView
+            android:id="@+id/shop_evaluation_addimg_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="25dp"
+            android:horizontalSpacing="3dp"
+            android:numColumns="3"
+            android:scrollbars="none"
+            android:verticalSpacing="5dp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</LinearLayout>

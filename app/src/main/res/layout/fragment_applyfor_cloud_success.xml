@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/titlebar" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_margin="45dp"
+        android:src="@drawable/wancheng" />
+
+
+    <TextView
+        android:id="@+id/tv_success_statue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="恭喜您成为花返云工"
+        android:textColor="#4B4B4B"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/btn_officing"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/pay_selector"
+        android:text="查看移动办公"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp" />
+
+</LinearLayout>

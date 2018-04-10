@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="beforeDescendants"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp">
+
+        <TextView
+            android:id="@+id/item_takeout_toEvaluate_list_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="盛宴一品小羊排"
+            android:textColor="#444444"
+            android:textSize="14sp" />
+
+        <com.android.p2pflowernet.project.view.customview.RatingBarView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/item_takeout_toEvaluate_list_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal"
+            app:starCount="5"
+            app:starEmpty="@drawable/star_border_hide"
+            app:starFill="@drawable/star_border_show"
+            app:starImageSize="28dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:descendantFocusability="beforeDescendants"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/signature_shape"
+        android:orientation="vertical">
+
+        <com.android.p2pflowernet.project.view.customview.CustomEditText
+            android:id="@+id/item_takeout_toEvaluate_editText_goods"
+            android:layout_width="fill_parent"
+            android:layout_height="86dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="说说它的优点和美中不足的地方呗"
+            android:maxLength="30"
+            android:padding="@dimen/dp_10"
+            android:textColor="#9F9F9F"
+            android:textColorHint="#9F9F9F"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:id="@+id/item_takeout_toEvaluate_list_tv_goods"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="right|center_vertical"
+            android:text="1/30字"
+            android:textSize="10dp" />
+    </LinearLayout>
+</LinearLayout>

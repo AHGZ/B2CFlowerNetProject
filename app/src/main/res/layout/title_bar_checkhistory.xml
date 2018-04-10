@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="49dp"
+    app:contentInsetStart="0dp">
+
+    <ImageView
+        android:id="@+id/im_back"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:src="@mipmap/icon_back_white" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="审核历史"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+
+    <ImageView
+        android:id="@+id/right_date"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:paddingRight="20dp"
+        android:src="@drawable/audit_icon_rl"
+        android:textColor="@android:color/white"
+        android:textSize="15dp" />
+
+</RelativeLayout>

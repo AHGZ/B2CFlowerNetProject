@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <CheckedTextView
+        android:id="@+id/selecto2ospec_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/gsspec_selector_bg"
+        android:checkMark="@null"
+        android:padding="5dp"
+        android:checked="false"
+        android:text="微辣"
+        android:textColor="@color/gs_spec_tvcolor"
+        android:textSize="14sp"></CheckedTextView>
+</LinearLayout>

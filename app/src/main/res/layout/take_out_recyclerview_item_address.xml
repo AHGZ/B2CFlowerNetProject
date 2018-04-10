@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="46dp"
+    android:orientation="horizontal"
+    android:background="#FFFFFF"
+    android:layout_marginTop="10dp">
+
+    <ImageView
+        android:id="@+id/take_out_recyclerview_item_address_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/take_out_icon_dizhi" />
+
+    <TextView
+        android:id="@+id/take_out_recyclerview_item_address_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="12dp"
+        android:text="常营5栋9层902室"
+        android:textColor="#444444"
+        android:textSize="14sp"
+        android:layout_weight="1" />
+    <ImageView
+        android:id="@+id/take_out_recyclerview_item_address_rightimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/take_out_icon_dizhi"
+        android:layout_marginRight="18dp"/>
+
+</LinearLayout>

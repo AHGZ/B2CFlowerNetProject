@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/forum_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/titlebar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/fragment_takeout_toEvaluate_linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="134dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="66dp">
+
+                    <ImageView
+                        android:id="@+id/fragment_takeout_toEvaluate_img_kIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:src="@mipmap/default_header" />
+
+                    <TextView
+                        android:id="@+id/fragment_takeout_toEvaluate_tv_kName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/fragment_takeout_toEvaluate_img_kIcon"
+                        android:gravity="center"
+                        android:text="达达配送"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/fragment_takeout_toEvaluate_tv_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:text="12月14日11:45左右送达"
+                        android:textSize="13sp" />
+                </RelativeLayout>
+
+                <com.android.p2pflowernet.project.view.customview.RatingBarView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/fragment_takeout_toEvaluate_rbv_kuaiDi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    app:starCount="5"
+                    app:starEmpty="@drawable/star_border_hide"
+                    app:starFill="@drawable/star_border_show"
+                    app:starImageSize="35dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="15dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="66dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/fragment_takeout_toEvaluate_img_dIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/default_header" />
+
+                    <TextView
+                        android:id="@+id/fragment_takeout_toEvaluate_tv_dName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_vertical"
+                        android:text="榴芒甜品"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <com.android.p2pflowernet.project.view.customview.RatingBarView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/fragment_takeout_toEvaluate_rbv_dianPu"
+                    android:layout_width="match_parent"
+                    android:layout_height="68dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    app:starCount="5"
+                    app:starEmpty="@drawable/star_border_hide"
+                    app:starFill="@drawable/star_border_show"
+                    app:starImageSize="35dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/signature_shape"
+                    android:orientation="vertical">
+
+                    <com.android.p2pflowernet.project.view.customview.CustomEditText
+                        android:id="@+id/fragment_takeout_toEvaluate_editText_dianPu"
+                        android:layout_width="match_parent"
+                        android:layout_height="86dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@null"
+                        android:gravity="top"
+                        android:hint="说说它的优点和美中不足的地方呗"
+                        android:maxLength="30"
+                        android:padding="@dimen/dp_10"
+                        android:textColor="#9F9F9F"
+                        android:textColorHint="#9F9F9F"
+                        android:textSize="@dimen/sp_14" />
+
+                    <TextView
+                        android:id="@+id/fragment_takeout_toEvaluate_tv_dianPu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="right|center_vertical"
+                        android:text="1/30字"
+                        android:textSize="10dp" />
+                </LinearLayout>
+
+                <com.android.p2pflowernet.project.view.customview.MyGridView
+                    android:id="@+id/fragment_takeout_toEvaluate_gridView"
+                    android:layout_width="match_parent"
+                    android:layout_height="163dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="25dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:horizontalSpacing="3dp"
+                    android:numColumns="3"
+                    android:scrollbars="none"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="10dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#EEEEEE" />
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/fragment_takeout_toEvaluate_listView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:descendantFocusability="beforeDescendants" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp">
+
+                <CheckBox
+                    android:id="@+id/fragment_takeout_toEvaluate_checkBox"
+                    style="@style/CustomCheckBoxTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="匿名"
+                    android:textColor="#444444"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="(你写的评价会以匿名的形式展现)"
+                    android:textColor="#A2A2A2"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/fragment_takeout_toEvaluate_tv_release"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginBottom="34dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/takeout_toevaluate_release_selector"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="发布"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_textView_linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@drawable/forum_video_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:id="@+id/item_video_textView_title"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:gravity="center_vertical"
+            android:text="花返会员文章内容标题"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/item_video_textView_img"
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:gravity="center"
+            android:src="@mipmap/default_image" />
+
+        <TextView
+            android:id="@+id/item_video_textView_describe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/imageView3"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/imageView3"
+            android:ellipsize="end"
+            android:lineSpacingExtra="6dp"
+            android:maxLines="2"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="部分绿色环保商品限时免单，饮食，居家类目等满减，福利天天有！最高直减160元，赶紧来看看把！"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divide" />
+
+    <RelativeLayout
+        android:id="@+id/item_video_textView_rl"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="查看详情"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/address_icon"
+            android:id="@+id/imageView3" />
+    </RelativeLayout>
+
+</LinearLayout>

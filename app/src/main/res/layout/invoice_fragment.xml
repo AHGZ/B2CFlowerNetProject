@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/titlebar" />
+
+    <com.android.p2pflowernet.project.view.customview.ElastticityScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:background="#e8e8e8" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="发票类型"
+                    android:textColor="#4B4B4B"
+                    android:textSize="14sp" />
+
+
+                <TextView
+                    android:id="@+id/tv_peper_invoice"
+                    android:layout_width="73dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/shap_rabate"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:text="纸质发票"
+                    android:textColor="#FF2E00"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:background="#e8e8e8"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:text="花返网暂不支持开电子发票，增值税发票。"
+                    android:textColor="#FF4646"
+                    android:textSize="11sp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="发票抬头"
+                    android:textColor="#4b4b4b"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:background="#e8e8e8" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp">
+
+                <RadioButton
+                    android:id="@+id/rb_persson"
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:background="@drawable/invoice_radio"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="个人"
+                    android:textColor="#4B4B4B"
+                    android:textSize="14sp" />
+
+
+                <RadioButton
+                    android:id="@+id/rb_group"
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/invoice_radio"
+                    android:button="@null"
+                    android:checked="false"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="团体"
+                    android:textColor="#4B4B4B"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:background="#e8e8e8" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:text="*"
+                    android:textColor="@color/red" />
+
+                <TextView
+                    android:id="@+id/tv_invoice_name"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="个人名称:        "
+                    android:textColor="#4b4b4b"
+                    android:textSize="14sp" />
+
+
+                <com.android.p2pflowernet.project.view.customview.CustomEditText
+                    android:id="@+id/edit_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:background="@null" />
+
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view_gone"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:background="#e8e8e8"
+                android:visibility="gone" />
+
+
+            <LinearLayout
+                android:id="@+id/ll_identify"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:text="*"
+                    android:textColor="@color/red" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="纳税人识别号:"
+                    android:textColor="#4b4b4b"
+                    android:textSize="14sp" />
+
+
+                <com.android.p2pflowernet.project.view.customview.CustomEditText
+                    android:id="@+id/edit_identify"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:background="@null" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:background="#e8e8e8"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:text="注意：请准确填写纳税人识别号，填写错误商家概不负责。"
+                    android:textColor="#FF4646"
+                    android:textSize="11sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="发票内容"
+                    android:textColor="#4b4b4b"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:background="#e8e8e8" />
+
+
+            <com.android.p2pflowernet.project.view.customview.MyListView
+                android:id="@+id/my_listView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+            <Button
+                android:id="@+id/btn_commit"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_margin="15dp"
+                android:background="@drawable/btn_incoice_selector"
+                android:text="确定"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+
+    </com.android.p2pflowernet.project.view.customview.ElastticityScrollView>
+
+</LinearLayout>

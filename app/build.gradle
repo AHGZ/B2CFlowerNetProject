@@ -1,0 +1,187 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.neenbedankt.android-apt'
+apply plugin: 'me.tatarka.retrolambda'
+
+
+android {
+    signingConfigs {
+        relealse {
+            keyAlias 'key0'
+            keyPassword 'q1w2e3'
+            storeFile file('D:/项目原型/hfwappinfo/hfwappinfo/huafannet.jks')
+            storePassword 'q1w2e3'
+        }
+    }
+//    signingConfigs {
+//        relealse {
+//            keyAlias '100'
+//            keyPassword 'q1w2e3'
+//            storeFile file('E://project/huafannet.jks')
+//            storePassword 'q1w2e3'
+//        }
+//    }
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+    defaultConfig {
+        applicationId "com.android.p2pflowernet.project"
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+        externalNativeBuild {
+            cmake {
+                cppFlags "-frtti -fexceptions"
+            }
+        }
+        ndk {
+            moduleName "jniLib"
+            abiFilters("armeabi", "armeabi-v7a", "x86", "mips")
+        }
+        multiDexEnabled true
+        signingConfig signingConfigs.relealse
+    }
+
+    productFlavors {
+        huawei {}
+        xiaomi {}
+        qihu360 {}
+        baidu {}
+        tencent {}
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            debuggable true
+        }
+        debug {
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.relealse
+        }
+    }
+    productFlavors.all {
+        flavor -> flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+//    externalNativeBuild {
+//        cmake {
+//            path "CMakeLists.txt"
+//        }
+//    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['src/main/jniLibs']
+        }
+    }
+    compileOptions {
+        targetCompatibility 1.7
+        sourceCompatibility 1.7
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:design:+'
+    compile 'com.android.support:appcompat-v7:+'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
+    compile project(':netlib')
+    // 注解式View ID
+    compile 'com.jakewharton:butterknife:8.0.1'
+    apt 'com.jakewharton:butterknife-compiler:8.0.1'
+    // EventBus
+    compile 'org.greenrobot:eventbus:3.0.0'
+    apt 'org.greenrobot:eventbus-annotation-processor:3.0.1'
+    //下拉刷新上拉加载
+    compile 'com.lcodecorex:tkrefreshlayout:1.0.7'
+    //RecyclerView框架
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.18'
+    //轮播图
+    compile 'com.youth.banner:banner:1.4.9'
+    compile 'com.bigkoo:convenientbanner:2.0.5'
+    //图片加载框架
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    // 自定义webview
+    compile 'com.just.agentweb:agentweb:3.0.0-rc'
+    // 自定义滑动控件
+    compile 'com.gxz.pagerslidingtabstrip:library:1.3'
+    // 图片加载控件
+    compile 'com.facebook.fresco:fresco:1.2.0'
+    compile 'jp.wasabeef:fresco-processors:2.1.0'
+    //拼音排序
+    compile 'com.github.promeg:tinypinyin:1.0.0'
+    // ~80KB
+    compile 'com.github.mcxtzhang:SwipeDelMenuLayout:V1.2.2'
+    //刷新框架
+    compile 'com.jwenfeng.pulltorefresh:library:1.0.3'
+    //滑动
+    compile 'cn.hugeterry.coordinatortablayout:coordinatortablayout:1.1.0'
+    //文字转场动画
+    compile 'com.andkulikov:transitionseverywhere:1.7.0'
+    //
+    compile 'com.android.support:cardview-v7:+'
+    //基于 RxJava 的图片选择器
+    compile 'com.caimuhao:rxpicker:1.1.4'
+    //九宫格图片选择器
+    compile 'cn.bingoogolapple:bga-photopicker:1.2.3@aar'
+    compile 'cn.bingoogolapple:bga-adapter:1.1.5@aar'
+    //ZXing
+    compile 'com.google.zxing:core:3.3.0'
+    // 解决超过dex方法数
+    compile 'com.android.support:multidex:1.0.1'
+    //银联支付
+    compile files('libs/UPPayAssistEx.jar')
+    compile files('libs/UPPayPluginExPro.jar')
+    //微信支付
+    //    compile 'com.tsy:pay:1.0.0'
+    //压缩图片
+    compile 'com.ghnor:flora:1.0.0-alpha1'
+    //百度地图及定位
+    compile files('libs/fastjson-1.2.4.jar')
+    compile files('libs/tbs_sdk_thirdapp_v3.1.0.1034_43100_sharewithdownload_obfs_20170301_182143.jar')
+    compile files('libs/wechat-sdk-android-with-mta-1.1.6.jar')
+    compile files('libs/BaiduLBS_Android.jar')
+    // push
+    compile files('libs/pushservice-6.0.0.64.jar')
+    //recyclerview
+    compile 'com.github.jdsjlzx:LRecyclerView:1.4.3'
+    // 添加dong hua
+    compile 'com.github.florent37:viewanimator:1.0.5'
+    //视频播放
+    compile 'cn.jzvd:jiaozivideoplayer:6.2.4'
+    //富文本
+    compile 'com.github.limedroid:XRichText:v1.0.0'
+    //图表库
+    compile 'com.github.PhilJay:MPAndroidChart:v3.0.1'
+
+    //高德地图
+    //3D地图so及jar
+    compile 'com.amap.api:3dmap:latest.integration'
+    //搜索功能
+    compile 'com.amap.api:search:latest.integration'
+    //友盟统计
+    compile 'com.umeng.analytics:analytics:latest.integration'
+}
+
+//EventBus3.0 Index
+apt {
+    arguments {
+        eventBusIndex "com.study.sangerzhong.studyapp.MyEventBusIndex"
+    }
+}
+
+

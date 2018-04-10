@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/forum_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/titlebar" />
+
+    <com.android.p2pflowernet.project.view.customview.ElastticityScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/forum_bg"
+                android:padding="16dp"
+                android:text="请保证姓名、身份证、银行卡开户人为同一人"
+                android:textColor="#4B4B4B"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingBottom="16dp"
+                        android:paddingTop="16dp"
+                        android:text="真实姓名"
+                        android:textColor="#4B4B4B"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:maxLength="8"
+                        android:id="@+id/edt_name"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:hint="请填写姓名"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/forum_bg" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingBottom="16dp"
+                        android:paddingTop="16dp"
+                        android:text="证件类型"
+                        android:textColor="#4B4B4B"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/edt_id"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:hint="身份证"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/forum_bg" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingBottom="16dp"
+                        android:paddingTop="16dp"
+                        android:text="证件号"
+                        android:textColor="#4B4B4B"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:maxLength="18"
+                        android:digits="0123456789x"
+                        android:inputType="number|phone"
+                        android:id="@+id/edt_idNumber"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:hint="点击填写证件号"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingBottom="16dp"
+                        android:paddingTop="16dp"
+                        android:text="开户银行"
+                        android:textColor="#4B4B4B"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_bankName"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_bankChoose"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableRight="@mipmap/goodinfo_right_icon"
+                        android:gravity="center"
+                        android:paddingBottom="16dp"
+                        android:paddingRight="16dp"
+                        android:paddingTop="16dp"
+                        android:text="请选择"
+                        android:textColor="#4B4B4B"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/forum_bg" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingBottom="16dp"
+                        android:paddingTop="16dp"
+                        android:text="银行卡号"
+                        android:textColor="#4B4B4B"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:maxLength="20"
+                        android:digits="0123456789"
+                        android:inputType="phone|number"
+                        android:id="@+id/edt_bankNumber"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:hint="请填写储蓄卡号"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_sure"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/authentication_tv_bg_selector"
+                android:clickable="true"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:text="实名认证并绑定"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical"
+                android:paddingLeft="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="注："
+                    android:textColor="#A8A8A8"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1、仅可使用储蓄卡，请不要填写信用卡。"
+                    android:textColor="#A8A8A8"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2、仅支持开户银行列表内的30家银行。"
+                    android:textColor="#A8A8A8"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.android.p2pflowernet.project.view.customview.ElastticityScrollView>
+
+</LinearLayout>

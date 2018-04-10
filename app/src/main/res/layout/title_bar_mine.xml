@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/titlebar_mine"
+    android:layout_width="match_parent"
+    android:layout_height="?actionBarSize"
+    app:contentInsetStart="0dp">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="我的"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+
+    <ImageView
+        android:id="@+id/iv_present"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="80dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:src="@drawable/icon_present" />
+
+    <ImageView
+        android:id="@+id/iv_setup"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:gravity="center"
+        android:src="@mipmap/mine_setup_icon" />
+
+    <ImageView
+        android:id="@+id/iv_message"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:src="@mipmap/mine_information_icon" />
+
+</RelativeLayout>

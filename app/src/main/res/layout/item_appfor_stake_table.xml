@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_apply_for_stake"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:lines="2"
+                android:text="名称"
+                android:textColor="#4B4B4B"
+                android:textSize="15sp" />
+
+            <FrameLayout
+                android:id="@+id/fl_notic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_horizontal"
+                android:layout_marginTop="5dp"
+                android:visibility="gone">
+
+                <com.android.p2pflowernet.project.view.customview.DragIndicatorView
+                    android:id="@+id/tv_notic"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/tips_circle"
+                    android:gravity="center"
+                    android:text="领"
+                    android:textColor="@android:color/white"
+                    android:textSize="13sp" />
+
+            </FrameLayout>
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_number"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:lines="2"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="购买份数"
+            android:textColor="#4B4B4B"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:lines="2"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="购买时间"
+            android:textColor="#4B4B4B"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_else"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1.2"
+            android:gravity="center"
+            android:lines="1"
+            android:text="其他"
+            android:textColor="#4B4B4B"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

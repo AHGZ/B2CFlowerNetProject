@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+    <include layout="@layout/cate_title"/>
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:fitsSystemWindows="true"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/toolbar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fitsSystemWindows="true"
+                app:contentScrim="?attr/colorPrimary"
+                app:layout_scrollFlags="scroll|snap|exitUntilCollapsed|enterAlwaysCollapsed">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="66dp"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:background="#EEEEEE" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="46dp"
+                        android:background="#FFFFFF"
+                        android:orientation="horizontal">
+
+                        <!--<TextView-->
+                        <!--android:id="@+id/cate_classify_tv1"-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_weight="0.8"-->
+                        <!--android:gravity="center"-->
+                        <!--android:text="全部"-->
+                        <!--android:textColor="#FF1E00"-->
+                        <!--android:textSize="16sp" />-->
+
+                        <!--<TextView-->
+                        <!--android:id="@+id/cate_classify_tv2"-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:gravity="center"-->
+                        <!--android:text="简餐便当"-->
+                        <!--android:textColor="#444444"-->
+                        <!--android:textSize="16sp" />-->
+
+                        <!--<TextView-->
+                        <!--android:id="@+id/cate_classify_tv3"-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:gravity="center"-->
+                        <!--android:text="面食粥点"-->
+                        <!--android:textColor="#444444"-->
+                        <!--android:textSize="16sp" />-->
+
+                        <!--<TextView-->
+                        <!--android:id="@+id/cate_classify_tv4"-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:gravity="center"-->
+                        <!--android:text="汉堡披萨"-->
+                        <!--android:textColor="#444444"-->
+                        <!--android:textSize="16sp" />-->
+                        <android.support.design.widget.TabLayout
+                            android:id="@+id/cate_classify_tablayout"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            app:tabIndicatorColor="@android:color/white"
+                            app:tabMode="scrollable"
+                            app:tabSelectedTextColor="@android:color/holo_red_dark"
+                            app:tabTextAppearance="@android:style/TextAppearance.Small"
+                            app:tabTextColor="#444444">
+
+                        </android.support.design.widget.TabLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_cate"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.7"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="13dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginRight="15dp"
+                                android:background="#EEEEEE" />
+
+                            <ImageView
+                                android:id="@+id/cate_iv_xia"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/cate_icon_top_xia"
+                                android:gravity="center" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/cate_down_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:background="#EEEEEE" />
+                </LinearLayout>
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+
+        </android.support.design.widget.AppBarLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:clipChildren="false">
+
+                <com.android.p2pflowernet.project.view.customview.DropdownButton
+                    android:id="@+id/db_goods_list_sort"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:id="@+id/ll_goods_list_sales"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+
+                    <TextView
+                        android:id="@+id/tv_goods_list_sales"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="销量最高"
+                        android:textColor="@drawable/o2o_sort_text_selector" />
+
+                    <ImageView
+                        android:id="@+id/iv_goods_list_sales"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@mipmap/new_price_sort_normal"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_goods_list_nearby"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_goods_list_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="距离最近"
+                        android:textColor="@drawable/o2o_sort_text_selector" />
+
+                    <ImageView
+                        android:id="@+id/iv_goods_list_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/icon_double_cut_arrow"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_goods_list_sel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_goods_list_select"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="筛选"
+                        android:textColor="@drawable/o2o_sort_text_selector" />
+
+                    <ImageView
+                        android:id="@+id/iv_goods_list_sel"
+                        android:layout_width="10dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/icon_sx" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.github.jdsjlzx.recyclerview.LRecyclerView
+                android:id="@+id/cate_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+        </LinearLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <include layout="@layout/cate_title"/>
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#EEEEEE">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#FF0000">
+
+        <ImageView
+            android:id="@+id/take_full_detail_shop_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/sptp1" />
+
+        <TextView
+            android:id="@+id/take_full_detail_shop_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/take_full_detail_shop_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="呷哺呷哺 (常营店)"
+            android:textColor="#FFFFFF" />
+
+        <ImageView
+            android:id="@+id/take_buying_shopdetails_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/icon_back_white" />
+    </RelativeLayout>
+
+    <include layout="@layout/take_out_fulldetail_state"/>
+</FrameLayout>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FF1E00"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <LinearLayout
+            android:id="@+id/ll_back"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ic_back"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:src="@mipmap/icon_back_white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="3.2"
+            android:background="@drawable/shape_o2o_search"
+            android:gravity="center">
+
+
+            <TextView
+                android:id="@+id/edit_search"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:gravity="center"
+                android:hint="搜索商品"
+                android:singleLine="true"
+                android:textColor="@color/colorBarText"
+                android:textColorHint="#A2A2A2"
+                android:textSize="13sp"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/search"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="2.4"
+                android:background="@drawable/shape_o2o_search">
+
+                <ImageView
+                    android:id="@+id/iv_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/icon_o2o_search" />
+
+                <com.android.p2pflowernet.project.view.customview.CustomEditText
+                    android:id="@+id/tosearch_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/iv_search"
+                    android:background="@null"
+                    android:drawableRight="@drawable/et_clear_search"
+                    android:hint="搜索商品"
+                    android:imeOptions="actionSearch"
+                    android:inputType="text"
+                    android:textColor="#A2A2A2"
+                    android:textColorHint="#A2A2A2"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="false"
+        android:minHeight="?actionBarSize"
+        android:splitMotionEvents="false">
+
+        <!--历史搜索记录-->
+        <ScrollView
+            android:id="@+id/scroll_history"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            app:layout_behavior="@string/scroll_behavior">
+
+            <LinearLayout
+                android:id="@+id/ll_history"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="16dp"
+                        android:paddingTop="16dp"
+                        android:text="历史搜索"
+                        android:textColor="#4B4B4B"
+                        android:textSize="17dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginTop="16dp"
+                        android:background="#E0E0E0" />
+
+                    <com.android.p2pflowernet.project.view.customview.MyListView
+                        android:id="@+id/listview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:layout_behavior="@string/scroll_behavior" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_clear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/clear_history_selector"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:drawableLeft="@drawable/icon_search_clear"
+                        android:drawablePadding="5dp"
+                        android:gravity="center"
+                        android:text="清空历史记录"
+                        android:textColor="#8D8D8D" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            app:layout_behavior="@string/scroll_behavior">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycleview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                app:layout_behavior="@string/scroll_behavior" />
+
+        </LinearLayout>
+
+        <include layout="@layout/view_black" />
+
+        <include layout="@layout/view_carpop" />
+
+        <include layout="@layout/view_car" />
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</LinearLayout>

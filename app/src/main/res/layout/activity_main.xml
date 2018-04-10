@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linear_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:orientation="vertical">
+
+    <com.android.p2pflowernet.project.view.customview.NoScrollViewPager
+        android:id="@+id/vp_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#EEEEEE" />
+
+
+    <com.android.p2pflowernet.project.view.bottombar.BottomBarLayout
+        android:id="@+id/bbl"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@color/selector_grey"
+        android:orientation="horizontal">
+
+        <com.android.p2pflowernet.project.view.bottombar.BottomBarItem
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            app:iconNormal="@mipmap/icon_home_normal"
+            app:iconSelected="@mipmap/icon_home_pressed"
+            app:itemText="首页"
+            app:itemTextSize="12sp"
+            app:openTouchBg="true"
+            app:textColorNormal="@color/tab_normal_color"
+            app:textColorSelected="@color/BottomBarItemTextColor"
+            app:touchDrawable="@drawable/selector_bg" />
+
+
+        <com.android.p2pflowernet.project.view.bottombar.BottomBarItem
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            app:iconNormal="@mipmap/icon_brand_normal"
+            app:iconSelected="@mipmap/icon_brand_pressed"
+            app:itemText="分类"
+            app:itemTextSize="12sp"
+            app:openTouchBg="true"
+            app:textColorNormal="@color/tab_normal_color"
+            app:textColorSelected="@color/BottomBarItemTextColor"
+            app:touchDrawable="@drawable/selector_bg" />
+
+
+        <com.android.p2pflowernet.project.view.bottombar.BottomBarItem
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            app:iconNormal="@drawable/con_life"
+            app:iconSelected="@drawable/con_life"
+            app:openTouchBg="true"
+            app:touchDrawable="@drawable/selector_life_bg" />
+
+
+        <com.android.p2pflowernet.project.view.bottombar.BottomBarItem
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            app:iconNormal="@mipmap/icon_car_normal"
+            app:iconSelected="@mipmap/icon_car_pressed"
+            app:itemText="购物车"
+            app:itemTextSize="12sp"
+            app:openTouchBg="true"
+            app:textColorNormal="@color/tab_normal_color"
+            app:textColorSelected="@color/BottomBarItemTextColor"
+            app:touchDrawable="@drawable/selector_bg" />
+
+        <com.android.p2pflowernet.project.view.bottombar.BottomBarItem
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            app:iconNormal="@mipmap/icon_mine_normal"
+            app:iconSelected="@mipmap/icon_mine_pressed"
+            app:itemText="我的"
+            app:itemTextSize="12sp"
+            app:openTouchBg="true"
+            app:textColorNormal="@color/tab_normal_color"
+            app:textColorSelected="@color/BottomBarItemTextColor"
+            app:touchDrawable="@drawable/selector_bg" />
+
+    </com.android.p2pflowernet.project.view.bottombar.BottomBarLayout>
+
+</LinearLayout>

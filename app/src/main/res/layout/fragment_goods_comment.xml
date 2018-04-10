@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_hometitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        app:tabIndicatorColor="#FF2E00"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="#FF2E00"
+        app:tabTextAppearance="@style/googeva"
+        app:tabTextColor="#4B4B4B" />
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_homepager"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1px"-->
+        <!--android:alpha="0.4"-->
+        <!--android:background="#dddddd" />-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="44dp"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:background="@color/white"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:paddingLeft="15dp"-->
+        <!--android:visibility="gone"-->
+        <!--android:paddingRight="15dp">-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="商品评价"-->
+            <!--android:textColor="#4B4B4B"-->
+            <!--android:textSize="15sp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_comment_count"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:text=""-->
+            <!--android:textColor="#4B4B4B"-->
+            <!--android:textSize="15sp" />-->
+    <!--</LinearLayout>-->
+
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1px"-->
+        <!--android:alpha="0.4"-->
+        <!--android:background="#dddddd" />-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@color/white"-->
+        <!--android:gravity="center_vertical|left"-->
+        <!--android:paddingLeft="12dp"-->
+        <!--android:paddingRight="12dp"-->
+        <!--android:paddingTop="17dp"-->
+        <!--android:visibility="gone">-->
+
+        <!--<TextView-->
+            <!--android:layout_width="81dp"-->
+            <!--android:layout_height="23dp"-->
+            <!--android:background="@drawable/comment_star_bg"-->
+            <!--android:gravity="center"-->
+            <!--android:text="质量很好(8)"-->
+            <!--android:textColor="#4F4F4F"-->
+            <!--android:textSize="12sp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_good_comment"-->
+            <!--android:layout_width="81dp"-->
+            <!--android:layout_height="23dp"-->
+            <!--android:layout_marginLeft="19dp"-->
+            <!--android:background="@drawable/comment_star_bg"-->
+            <!--android:gravity="center"-->
+            <!--android:text="很便宜(6)"-->
+            <!--android:textColor="#4F4F4F"-->
+            <!--android:textSize="12sp" />-->
+
+    <!--</LinearLayout>-->
+
+    <!--<com.jwenfeng.library.pulltorefresh.PullToRefreshLayout-->
+        <!--android:id="@+id/pull_refresh"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+        <!--<android.support.v7.widget.RecyclerView-->
+            <!--android:id="@+id/comment_recycleview"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:scrollbars="vertical" />-->
+
+    <!--</com.jwenfeng.library.pulltorefresh.PullToRefreshLayout>-->
+
+</LinearLayout>

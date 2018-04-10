@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/titlebar" />
+
+    <com.android.p2pflowernet.project.view.customview.ElastticityScrollView
+        android:id="@+id/srcollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="25dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F6F6F6"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#fafafa"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/fastregister_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fafafa">
+
+                    <RelativeLayout
+                        android:id="@+id/password_rly"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/shap2"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:id="@+id/iv_pwd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:paddingLeft="16dp"
+                            android:src="@drawable/icon_pwd" />
+
+                        <com.android.p2pflowernet.project.view.customview.CustomEditText
+                            android:id="@+id/edittext_passwordvalue"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="8dp"
+                            android:layout_toRightOf="@id/iv_pwd"
+                            android:background="@null"
+                            android:hint="请输入密码"
+                            android:inputType="textPassword"
+                            android:paddingRight="10dp"
+                            android:singleLine="true"
+                            android:textColorHint="#B3B3B3"
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/register_invidtecode"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_below="@id/password_rly"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/shap2"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:id="@+id/iv_invitecode"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:paddingLeft="16dp"
+                            android:src="@drawable/icon_invite" />
+
+                        <com.android.p2pflowernet.project.view.customview.CustomEditText
+                            android:id="@+id/edittext_invidtecode"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="8dp"
+                            android:layout_toRightOf="@id/iv_invitecode"
+                            android:background="@null"
+                            android:hint="请填写邀请码"
+                            android:paddingRight="10dp"
+                            android:singleLine="true"
+                            android:textColorHint="#B3B3B3"
+                            android:textSize="16sp" />
+
+
+                        <ImageView
+                            android:id="@+id/iv_invidtecode"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@mipmap/scan_icon" />
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/vestaddress_rly"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_below="@id/register_invidtecode"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/shap2"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:id="@+id/iv_location"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:paddingLeft="16dp"
+                            android:src="@mipmap/location_icon" />
+
+                        <com.android.p2pflowernet.project.view.customview.CustomEditText
+                            android:id="@+id/edittext_vestaddress"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="8dp"
+                            android:layout_toRightOf="@id/iv_location"
+                            android:background="@null"
+                            android:hint="账户归属地"
+                            android:inputType="textPassword"
+                            android:paddingRight="10dp"
+                            android:singleLine="true"
+                            android:textColorHint="#B3B3B3"
+                            android:textSize="16sp" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/commit_btn"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/btn_norml"
+                android:text="完成"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+    </com.android.p2pflowernet.project.view.customview.ElastticityScrollView>
+
+</LinearLayout>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="1dp"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="97dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="90dp"
+            android:layout_height="97dp">
+
+            <ImageView
+                android:id="@+id/group_buying_item_iv_img"
+                android:layout_width="90dp"
+                android:layout_height="97dp"
+                android:src="@mipmap/logo" />
+            <TextView
+                android:id="@+id/group_buying_item_tv_new"
+                android:gravity="center"
+                android:text="新品"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:background="@drawable/groud_new_textbg"
+                android:layout_width="32dp"
+                android:layout_height="16dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/group_buying_item_tv_nick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="新品双人套餐"
+                    android:textColor="#444444"
+                    android:textSize="16sp" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="0.5">
+
+                    <ImageView
+                        android:id="@+id/group_buying_item_iv_by_ticket"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/group_buying_item_meter"
+                        android:src="@drawable/group_buying_icon_dz" />
+
+                    <TextView
+                        android:id="@+id/group_buying_item_meter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:padding="2dp"
+                        android:text="588m"
+                        android:layout_centerVertical="true"
+                        android:textColor="#777777"
+                        android:textSize="10sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/group_buying_item_shop_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="一家串店"
+                        android:textColor="#444444"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/group_buying_item_yu_sale"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="16dp"
+                        android:layout_toRightOf="@+id/ratin_star"
+                        android:layout_weight="0.82"
+                        android:text="¥87/人"
+                        android:textColor="#444444"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:id="@+id/group_buying_item_yis_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/group_buying_icon_ys" />
+
+                    <TextView
+                        android:id="@+id/group_buying_item_yis_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="已售556"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/group_buying_item_xianjia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="￥99"
+                    android:textColor="#FF1E00"
+                    android:textSize="18sp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:id="@+id/group_buying_item_msj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_toRightOf="@+id/group_buying_item_xianjia"
+                    android:text="门市价：¥199 "
+                    android:textColor="#A2A2A2"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/group_buying_item_huafan_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FEBD3F"
+                android:paddingBottom="5dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="5dp"
+                android:text="花返：¥19元"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

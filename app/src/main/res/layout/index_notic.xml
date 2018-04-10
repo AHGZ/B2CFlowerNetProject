@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/view_gray1"
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:background="#eeeeee" />
+
+    <com.android.p2pflowernet.project.view.customview.NoticTextView
+        android:layout_below="@id/view_gray1"
+        android:id="@+id/index_info"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/index_height"
+        android:background="@android:color/white"
+        android:drawableLeft="@mipmap/icon_notic"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:drawablePadding="10dp"
+        android:gravity="left|center_vertical"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:padding="10dp"
+        android:text="女人衣柜不能没有的6种时髦衣服...."
+        android:textColor="#999999">
+
+    </com.android.p2pflowernet.project.view.customview.NoticTextView>
+
+    <View
+        android:layout_below="@id/index_info"
+        android:id="@+id/view_gray"
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:background="#eeeeee" />
+</RelativeLayout>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BottomBarItem">
+        <!--默认状态下的图标-->
+        <attr name="iconNormal" format="reference" />
+        <!--选中状态下的图标-->
+        <attr name="iconSelected" format="reference" />
+        <!--底部文字-->
+        <attr name="itemText" format="string" />
+        <!--文字大小-->
+        <attr name="itemTextSize" format="dimension" />
+        <!--默认状态下的文字颜色-->
+        <attr name="textColorNormal" format="color" />
+        <!--选中状态下的文字颜色-->
+        <attr name="textColorSelected" format="color" />
+        <!--文字和图标的顶部距离-->
+        <attr name="itemMarginTop" format="dimension" />
+        <!--是否开启触摸背景效果-->
+        <attr name="openTouchBg" format="boolean" />
+        <!--设置触摸背景-->
+        <attr name="touchDrawable" format="reference" />
+        <!--设置图标的宽度-->
+        <attr name="iconWidth" format="dimension" />
+        <!--设置图标的高度-->
+        <attr name="iconHeight" format="dimension" />
+        <!--设置BottomBarItem的padding-->
+        <attr name="itemPadding" format="dimension" />
+        <!--设置未读数字体大小-->
+        <attr name="unreadTextSize" format="dimension" />
+        <!--设置提示消息字体大小-->
+        <attr name="msgTextSize" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="NormalTopBar">
+        <!--中间标题属性-->
+        <attr name="top_titleText" format="string" />
+        <attr name="top_titleTextSize" format="dimension" />
+        <attr name="top_titleTextColor" format="color" />
+        <attr name="leftText" format="string" />
+        <attr name="top_titleImageSrc" format="reference" />
+
+        <!--左边按钮属性-->
+        <attr name="leftTextColor" format="color" />
+        <attr name="leftImageSrc" format="reference" />
+        <attr name="lefttextview" format="string" />
+
+        <!--右边按钮属性-->
+        <attr name="rightTextColor" format="color" />
+        <attr name="leftBackground" format="color" />
+        <attr name="rightBackground" format="color" />
+        <attr name="rightImageSrc" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="SlideDetailsLayout">
+        <!-- float value for indicate the moment of switch panel-->
+        <attr name="percent" format="float" />
+        <!-- how long the animation keep-->
+        <attr name="duration" format="integer" />
+        <!-- default panel to show after init-->
+        <attr name="default_panel" format="enum">
+            <enum name="front" value="0" />
+            <enum name="behind" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <attr name="indexBarTextSize" format="dimension" />
+
+    <declare-styleable name="IndexBar">
+        <attr name="indexBarTextSize" />
+        <attr name="indexBarPressBackground" format="color" />
+    </declare-styleable>
+
+    <!-- 圆形头像 -->
+    <declare-styleable name="CircleImageView">
+        <attr name="CircleImageViewborder_width" format="dimension" />
+        <attr name="CircleImageViewborder_color" format="color" />
+    </declare-styleable>
+    <declare-styleable name="DropDownMenu">
+        <!--下划线颜色-->
+        <attr name="underlineColor" format="color" />
+        <!--分割线颜色(菜单栏)-->
+        <attr name="dividerColor" format="color" />
+        <!--tab选中颜色-->
+        <attr name="textSelectedColor" format="color" />
+        <!--tab未选中颜色-->
+        <attr name="textUnselectedColor" format="color" />
+        <!--tab 背景颜色-->
+        <attr name="menuBackgroundColor" format="color" />
+        <!--遮罩颜色，一般是半透明-->
+        <attr name="maskColor" format="color" />
+        <!--字体大小-->
+        <attr name="menuTextSize" format="dimension" />
+        <!--tab选中状态图标-->
+        <attr name="menuSelectedIcon" format="reference" />
+        <!--tab未选中状态图标-->
+        <attr name="menuUnselectedIcon" format="reference" />
+    </declare-styleable>
+
+    <!--自定义左右滑动效果-->
+    <declare-styleable name="ImageCoverFlowView">
+        <attr name="visibleImage" format="integer" />
+        <attr name="reflectionHeight" format="fraction" />
+        <attr name="reflectionGap" format="dimension" />
+        <attr name="reflectionShaderEnable" format="boolean" />
+        <attr name="topImageClickEnable" format="boolean" />
+        <attr name="coverflowGravity" format="enum">
+            <enum name="top" value="0" />
+            <enum name="bottom" value="1" />
+            <enum name="center_vertical" value="2" />
+        </attr>
+        <attr name="coverflowLayoutMode" format="enum">
+            <enum name="match_parent" value="0" />
+            <enum name="wrap_content" value="1" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="ViewfinderView">
+        <attr name="corner_color" format="color" />
+        <attr name="laser_color" format="color" />
+        <attr name="frame_color" format="color" />
+        <attr name="mask_color" format="color" />
+        <attr name="result_point_color" format="color" />
+        <attr name="result_color" format="color" />
+        <attr name="label_text_color" format="color" />
+        <attr name="label_text" format="string" />
+        <attr name="label_text_size" format="float" />
+    </declare-styleable>
+
+    <!--自定义查看更多-->
+    <declare-styleable name="FolderTextView">
+        <attr name="foldText" format="string" />
+        <attr name="unFoldText" format="string" />
+        <attr name="foldLine" format="integer" />
+        <attr name="tailTextColor" format="color" />
+        <attr name="canFoldAgain" format="boolean" />
+    </declare-styleable>
+    <!--自定义软件盘-->
+    <declare-styleable name="PasswordKeyboardView">
+        <attr name="pkvDeleteDrawable" format="reference" />
+        <attr name="pkvDeleteBackgroundColor" format="color|reference" />
+    </declare-styleable>
+    <!--分段进度条-->
+    <declare-styleable name="SectionProgressBar">
+        <attr name="section_background" format="color" />
+        <attr name="section_foreground" format="color" />
+        <attr name="section_space_color" format="color" />
+        <attr name="section_text_size" format="dimension" />
+        <attr name="section_text_color" format="color" />
+        <attr name="section_light_text_color" format="color" />
+        <attr name="section_bar_height" format="dimension" />
+        <attr name="section_bar_slidetag" format="integer" />
+        <attr name="section_bar_cursor" format="reference" />
+    </declare-styleable>
+
+    <!--自定义星星-->
+    <declare-styleable name="RatingBarView">
+
+        <attr name="starImageSize" format="dimension" />
+        <attr name="starCount" format="integer" />
+        <attr name="starEmpty" format="reference" />
+        <attr name="starFill" format="reference" />
+        <attr name="paddingleft" format="integer" />
+        <attr name="paddingtop" format="integer" />
+        <attr name="paddingright" format="integer" />
+        <attr name="paddingbottom" format="integer" />
+
+    </declare-styleable>
+    <!--自带红色圆点的布局样式-->
+    <declare-styleable name="RedDotLayout">
+        <attr name="red_background" format="color" />
+        <attr name="red_radius" format="dimension" />
+        <attr name="red_text" format="string" />
+        <attr name="red_textColor" format="color" />
+        <attr name="red_location" format="integer" />
+        <attr name="red_textSize" format="dimension" />
+    </declare-styleable>
+
+    <style name="CustomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/bg_dialog_confirm</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <!--添加菜单-->
+    <declare-styleable name="AddWidget">
+        <attr name="circle_anim" format="boolean" />
+        <attr name="sub_anim" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CountDownView">
+        <attr name="viewBg" format="color" />
+        <attr name="cellBg" format="color" />
+        <attr name="cellTextColor" format="color" />
+        <attr name="TextColor" format="color" />
+        <attr name="TextSize" format="dimension" />
+        <attr name="cellTextSize" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="SuspendButtonLayout">
+        <!-- 子按钮数量，3-6之间，小于3默认为3，大于6默认为6 -->
+        <attr name="number" format="integer" />
+        <!-- 上下方留出的空间，默认分别小于宽高中较小者的一半 -->
+        <attr name="marginY" format="dimension" />
+        <!-- 主按钮与子按钮间距，默认小于等于marginY -->
+        <attr name="distance" format="dimension" />
+        <!-- 按钮的大小，默认小于distance -->
+        <attr name="imageSize" format="dimension" />
+        <!-- 按钮图片 -->
+        <attr name="imageMainOpen" format="reference" />
+        <attr name="imageMainClose" format="reference" />
+        <attr name="image1" format="reference" />
+        <attr name="image2" format="reference" />
+        <attr name="image3" format="reference" />
+        <attr name="image4" format="reference" />
+        <attr name="image5" format="reference" />
+        <attr name="image6" format="reference" />
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/titlebar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/iv_user"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/icon_head" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="申请描述"
+            android:textColor="#4B4B4B"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/applyfor_biration_shape">
+
+            <com.android.p2pflowernet.project.view.customview.CustomEditText
+                android:id="@+id/ed_applyfor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="@null"
+                android:gravity="top"
+                android:hint="请在此输入您的申请"
+                android:maxLength="50"
+                android:minLines="6"
+                android:padding="@dimen/dp_10"
+                android:textColor="#9F9F9F"
+                android:textColorHint="#9F9F9F"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/id_editor_detail_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ed_applyfor"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="right"
+                android:text="0/50"
+                android:textColor="#9F9F9F"
+                android:textSize="13sp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="温馨提示：提交成功的申请单，花返网客服会在3个工作日之内联系您， 请您保持电话畅通！"
+            android:textColor="#9F9F9F"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_commit"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_margin="15dp"
+            android:background="@drawable/btn_incoice_selector"
+            android:text="提交"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>

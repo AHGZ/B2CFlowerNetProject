@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.android.p2pflowernet.project.view.customview.ElastticityScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:background="#e8e8e8" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:text="反馈类型"
+                    android:textColor="#4B4B4B"
+                    android:textSize="14sp" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="#e8e8e8" />
+
+                <com.android.p2pflowernet.project.view.customview.MyGridView
+                    android:id="@+id/gridview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:numColumns="3"
+                    android:visibility="visible" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="15dp"
+                    android:text="反馈内容"
+                    android:textColor="#4B4B4B"
+                    android:textSize="14sp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/shap_feedback"
+                    android:orientation="vertical">
+
+                    <com.android.p2pflowernet.project.view.customview.CustomEditText
+                        android:id="@+id/et_feedback"
+                        android:layout_width="match_parent"
+                        android:layout_height="118dp"
+                        android:background="@null"
+                        android:gravity="start"
+                        android:hint="请输入您宝贵的意见和建议"
+                        android:maxLines="100"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:textColor="#B2B2B2"
+                        android:textSize="13sp" />
+
+
+                    <TextView
+                        android:id="@+id/tv_num_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="right|center_vertical"
+                        android:text="0/100字" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_commit"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/btn_norml"
+                    android:text="提交"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+
+            <include layout="@layout/feed_back" />
+
+        </LinearLayout>
+
+    </com.android.p2pflowernet.project.view.customview.ElastticityScrollView>
+
+</LinearLayout>

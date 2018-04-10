@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.android.p2pflowernet.project.view.customview.NormalTopBar
+        android:id="@+id/normal_top"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        app:leftImageSrc="@mipmap/common_back_ic"
+        app:rightImageSrc="@drawable/fr_icon_gd"
+        app:top_titleTextColor="@android:color/widget_edittext_dark" />
+
+
+    <com.jwenfeng.library.pulltorefresh.PullToRefreshLayout
+        android:id="@+id/pull_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#eeeeee"
+            android:dividerHeight="0dp" />
+
+    </com.jwenfeng.library.pulltorefresh.PullToRefreshLayout>
+
+
+</LinearLayout>

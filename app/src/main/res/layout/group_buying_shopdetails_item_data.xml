@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/group_buying_shopdetails_tuandan_name"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_weight="1"
+        android:text="招牌小龙虾"
+        android:textColor="#777777"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/group_buying_shopdetails_tuandan_num"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="1份"
+        android:textColor="#777777"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/group_buying_shopdetails_tuandan_price"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="15dp"
+        android:layout_weight="1"
+        android:gravity="right|center_vertical"
+        android:text="￥54"
+        android:textColor="#777777"
+        android:textSize="13sp" />
+</LinearLayout>

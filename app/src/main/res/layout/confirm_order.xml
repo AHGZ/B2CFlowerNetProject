@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/cate_title" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/confirm_order_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="#FFFFFF">
+
+        <TextView
+            android:id="@+id/confirm_order_tv_hfyh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:text="花返优惠:"
+            android:textColor="#4E4E4E"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/confirm_order_tv_hfyh_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/confirm_order_tv_hfyh"
+            android:text="¥"
+            android:textColor="#444444"
+            android:textSize="12sp" />
+
+
+        <RelativeLayout
+            android:id="@+id/confirm_order_rel_sum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/confirm_order_tv_sum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="合计:"
+                android:textColor="#4B4B4B"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/confirm_order_tv_sum_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/confirm_order_tv_sum"
+                android:layout_weight="1"
+                android:text="¥"
+                android:textColor="#FF2E00"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/confirm_order_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="#FF1E00"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp"
+            android:text="提交订单"
+            android:textColor="#FFFEFE"
+            android:textSize="18sp" />
+    </RelativeLayout>
+</LinearLayout>

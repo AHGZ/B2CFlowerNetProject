@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/evaluation_img"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:src="@mipmap/default_header" />
+
+        <TextView
+            android:id="@+id/evaluation_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="31dp"
+            android:text="热巴"
+            android:textColor="#444444"
+            android:textSize="16sp" />
+
+        <com.android.p2pflowernet.project.view.customview.RatingBarView
+            android:id="@+id/ratin_star"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="32dp"
+            android:layout_weight="1"
+            app:paddingleft="5"
+            app:paddingright="5"
+            app:starCount="5"
+            app:starEmpty="@drawable/star_border1_hide"
+            app:starFill="@drawable/star_border1_show"
+            app:starImageSize="18dp" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/evaluation_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="61dp"
+        android:layout_marginRight="19dp"
+        android:lineSpacingExtra="5dp"
+        android:text="味道一如既往的好，尤其是招牌小龙虾，香辣可 口！服务态度也很好！下次还会再来。" />
+
+    <com.android.p2pflowernet.project.view.customview.NoScrollGridView
+        android:id="@+id/group_buying_shopdetails_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="61dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:horizontalSpacing="10dp"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:verticalSpacing="10dp" />
+
+    <TextView
+        android:id="@+id/evaluation_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:text="2017.12.12"
+        android:textColor="#A2A2A2"
+        android:textSize="13sp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#EEEEEE"/>
+
+</LinearLayout>

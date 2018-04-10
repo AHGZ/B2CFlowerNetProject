@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/addremarks_title" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#EEEEEE" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="118dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/sle_item_selector">
+
+        <com.android.p2pflowernet.project.view.customview.CustomEditText
+            android:id="@+id/add_remarks_item_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="9dp"
+            android:background="@null"
+            android:hint="口味,偏好等要求"
+            android:maxLength="50"
+            android:textColor="#A2A2A2"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/add_remarks_item_tv_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="9dp"
+            android:layout_marginRight="9dp"
+            android:maxLength="50"
+            android:text="0/50"
+            android:textColor="#CCCCCC"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <com.android.p2pflowernet.project.view.customview.MyGridView
+        android:id="@+id/add_remarks_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:horizontalSpacing="15dp"
+        android:numColumns="4"
+        android:verticalSpacing="14dp">
+
+    </com.android.p2pflowernet.project.view.customview.MyGridView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#EEEEEE" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:paddingBottom="14dp"
+            android:paddingTop="18dp"
+            android:text="发票"
+            android:textColor="#777777"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/zzkfp_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:paddingBottom="14dp"
+            android:paddingTop="18dp"
+            android:text="支持开发票"
+            android:textColor="#444444"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/remarks_view1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#EFEFEF" />
+
+    <LinearLayout
+        android:id="@+id/add_remarks_bxyfp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:text="不需要发票"
+            android:textColor="#444444"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/add_remarks_bxyfp_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:visibility="gone"
+            android:src="@drawable/icon_duihao" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/remarks_view2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#EFEFEF" />
+
+    <LinearLayout
+        android:id="@+id/add_remarks_tjfptt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/icon_adds" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:text="添加发票抬头"
+            android:textColor="#444444"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EEEEEE" />
+</LinearLayout>

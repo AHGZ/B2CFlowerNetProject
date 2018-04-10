@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/shap_apply_for_refund" android:state_checked="false" />
+    <item android:drawable="@drawable/shap_apply_for_refund_checked" android:state_checked="true" />
+
+</selector>

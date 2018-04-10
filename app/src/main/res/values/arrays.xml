@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <string-array name="provinces">
+        <item>广东</item>
+        <item>北京</item>
+        <item>福建</item>
+        <item>浙江</item>
+        <item>山东</item>
+        <item>江苏</item>
+        <item>河南</item>
+        <item>安徽</item>
+        <item>重庆</item>
+        <item>湖北</item>
+        <item>湖南</item>
+        <item>河北</item>
+        <item>四川</item>
+        <item>天津</item>
+        <item>吉林</item>
+        <item>黑龙江</item>
+        <item>江西</item>
+        <item>辽宁</item>
+        <item>内蒙古</item>
+        <item>宁夏</item>
+        <item>青海</item>
+        <item>山西</item>
+        <item>陕西</item>
+        <item>上海</item>
+        <item>新疆</item>
+        <item>西藏</item>
+        <item>云南</item>
+        <item>甘肃</item>
+        <item>贵州</item>
+        <item>广西</item>
+        <item>海南</item>
+
+    </string-array>
+
+
+    <string-array name="express">
+
+        <item>其他快递</item>
+        <item>安世通快递</item>
+        <item>百世快递</item>
+        <item>北极星快运</item>
+        <item>菜鸟快递</item>
+        <item>仓鼠快递</item>
+        <item>申通快递</item>
+        <item>顺丰快递</item>
+        <item>东方快递</item>
+        <item>圆通快递</item>
+        <item>国通快递</item>
+        <item>全峰</item>
+        <item>汇通</item>
+        <item>天天</item>
+        <item>中通</item>
+        <item>韵达</item>
+        <item>圆通</item>
+        <item>宅急送</item>
+        <item>跨越速运</item>
+        <item>邮政EMS</item>
+
+    </string-array>
+    <!--分段值对应表识-->
+    <array name="SectionLevels">
+        <item></item>
+        <item>铜</item>
+        <item>银</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item>金</item>
+    </array>
+
+    <!--合伙人分段进度值-->
+    <array name="PartnerSectionLevelValues">
+        <item>0</item>
+        <item>50</item>
+        <item>100</item>
+        <item>150</item>
+        <item>200</item>
+        <item>250</item>
+        <item>300</item>
+    </array>
+
+    <!--分段值对应表识-->
+    <array name="SectionLevels1">
+        <item></item>
+        <item>铜</item>
+        <item>银</item>
+        <item></item>
+        <item></item>
+        <item>金</item>
+    </array>
+
+    <!--代理人分段进度值-->
+    <array name="AgencySectionLevelValues">
+        <item>0</item>
+        <item>100</item>
+        <item>200</item>
+        <item>300</item>
+        <item>400</item>
+        <item>500</item>
+
+    </array>
+
+    <!--用餐人数-->
+    <array name="NumberOfMeals">
+        <item>不限</item>
+        <item>单人餐</item>
+        <item>双人餐</item>
+        <item>3-4人餐</item>
+        <item>5-10人餐</item>
+        <item>10人以上餐</item>
+    </array>
+    <array name="bank">
+        <item>锦州银行</item>
+        <item>工商银行</item>
+        <item>农业银行</item>
+        <item>中国银行</item>
+        <item>建设银行</item>
+        <item>邮政储蓄银行</item>
+        <item>交通银行</item>
+        <item>中信银行</item>
+        <item>光大银行</item>
+        <item>华夏银行</item>
+        <item>民生银行</item>
+        <item>广发银行</item>
+        <item>平安银行</item>
+        <item>招商银行</item>
+        <item>兴业银行</item>
+        <item>浦发银行</item>
+        <item>渤海银行</item>
+        <item>恒丰银行</item>
+        <item>浙商银行</item>
+        <item>北京银行</item>
+        <item>上海银行</item>
+        <item>南京银行</item>
+        <item>江苏银行</item>
+        <item>徽商银行</item>
+        <item>天津银行</item>
+        <item>重庆银行</item>
+        <item>河北银行</item>
+        <item>内蒙古银行</item>
+        <item>吉林银行</item>
+        <item>湖北银行</item>
+        <item>晋商银行</item>
+    </array>
+</resources>
